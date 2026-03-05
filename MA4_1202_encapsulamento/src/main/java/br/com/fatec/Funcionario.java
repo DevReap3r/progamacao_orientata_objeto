@@ -15,26 +15,6 @@ public class Funcionario {
     private String nome;
     private float salario;
     
-    //construtores
-    
-    //construtor DEFAULT
-    public Funcionario() {
-        System.out.println("Criando Funcionário...");
-    }
-    
-    public Funcionario (String nome) {
-        //coloca o parâmetro dentro do atributo
-        this.nome = nome;
-        //nome = nome ===> NÃO funciona
-    }
-    
-    public Funcionario (int matricula, String nome, float salario) {
-        this(nome); //chama o metodo construtor (DEVE SER A 1ª LINHA DESTE MÉTODO)
-        this.matricula = matricula;
-        //outra forma 
-        setSalario(salario);
-    }
-    
     //getters e setters
 
     public int getMatricula() {
